@@ -1,1 +1,1 @@
-# loopis-games.github.io
+# loopisgames.github.io
