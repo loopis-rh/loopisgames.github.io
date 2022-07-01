@@ -1,0 +1,82 @@
+* { font-family: sans-serif }
+html { font-size: 62.5% }
+
+#home {
+    user-select: none;
+    position: absolute;
+    color: #141464;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 2.5%
+}
+
+#home:hover {
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-bottom: 3px solid #141464;
+}
+
+#home:hover::after {
+    animation-name: home;
+    animation-duration: 500s;
+    animation-direction: reverse;
+    font-size: 2rem;
+}
+
+#top {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 35% 30px 35%
+}
+
+#score, #time {
+    text-align: center;
+}
+
+h1 { margin: 0 }
+#player-score, #time-left { font-size: 3rem }
+
+#start {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 100%;
+    width: fit-contents
+}
+
+#start:hover {
+    background-color: #bebebe;
+    cursor: pointer
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.button {
+    background-color: #bebebe;
+    border: 3px solid black;
+    border-radius: 10%;
+    width: 150px;
+    height: 150px
+}
+
+.button:hover {
+    background-color: #969696;
+    cursor: pointer
+}
+
+.target-btn {
+    background-image: url("../media/jogo1/FoxIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover
+}
