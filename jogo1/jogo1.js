@@ -1,4 +1,5 @@
 const score = document.querySelector('#player-score'),
+        scoreMsg = document.querySelector("#score-msg"),
         start = document.querySelector('#start'),
         time = document.querySelector('#time-left'),
         btns = document.querySelectorAll('.button'),
@@ -49,7 +50,8 @@ function timerCountdown() {
     if (currentTime == 0) {
         clearInterval(countdown);
         clearInterval(timer);
-        alert('FIM DE JOGO! Sua pontuação: ' + result);
+        scoreMsg.innerHTML = "FIM DE JOGO! Sua pontuação: " + result;
+        showModal();
         result = 0;
         score.innerHTML = result;
         currentTime = 60;
@@ -57,4 +59,14 @@ function timerCountdown() {
         btns.forEach(btn => { btn.classList.remove('target-btn') });
         start.style.display = 'block'
     }
+}
+
+function showModal() {
+    let modal = document.querySelector(".modal");
+    modal.classList.add("show-modal");
+}
+
+function hideModal() {
+    let modal = document.querySelector(".modal");
+    modal.classList.remove("show-modal");
 }
