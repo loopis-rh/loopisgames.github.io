@@ -1,0 +1,82 @@
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#top {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 80px;
+    margin: 20px 40%;
+}
+
+#round { display: none }
+#current-round { font-size: 2.5rem; }
+
+#start {
+    display: block;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#start:hover { background-color: #aaa; }
+#start:active { background-color: #c9c9c9 }
+
+#color {
+    color: white;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 5%;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#color-name {
+    font-size: 4.5rem;
+    -webkit-text-stroke: 2px #303030;
+    max-height: fit-content;
+    margin-top: 42.5%
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.button {
+    cursor: pointer;
+    color: white;
+    -webkit-text-stroke: 1px #303030;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius:10%;
+    width: 150px;
+    height: 150px
+}
+
+.button:hover { font-size: 2.5rem }
+#red { background-color: red }
+#red:hover { background-color: #bb0000 }
+#blue { background-color: blue }
+#blue:hover { background-color: #0000bb }
+#yellow { background-color: #ffff00 }
+#yellow:hover { background-color: #bbbb00 }
+#green { background-color: green }
+#green:hover { background-color: #004400 }
+#purple { background-color: purple }
+#purple:hover { background-color: #600060 }
+#orange { background-color: orange }
+#orange:hover { background-color: #cc8000 }
